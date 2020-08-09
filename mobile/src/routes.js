@@ -5,6 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './pages/Home';
 import LoginScreen from './pages/Login';
 import HistoriesScreen from './pages/Histories';
+import RegisterScreen from './pages/Register';
+
 
 
 const MainStack = createStackNavigator();
@@ -20,6 +22,7 @@ const Routes = () =>{
                 }}/>
                 <MainStack.Screen name="Login" component={LoginScreen} />
                 <MainStack.Screen name="Histories" component={HistoriesScreen} />
+                <MainStack.Screen name="Register" component={RegisterScreen} />
             </MainStack.Navigator>
         </NavigationContainer>
     );
