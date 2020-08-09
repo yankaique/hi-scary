@@ -9,6 +9,10 @@ const HomeScreen = () =>{
         navigation.navigate('Login');
     }
 
+    const handleRegisterButton = ()=>{
+        navigation.navigate('Register');
+    }
+
 
     return(
         <Container>
@@ -17,7 +21,7 @@ const HomeScreen = () =>{
                     <Icon source={require('../../assets/pumpkin.png')}/>
                     <Text style={{fontSize:35, color:'#fff', marginTop:20}}>Welcome Stranger</Text>
                     <ButtonArea>
-                        <Button onPress={()=>{}}>
+                        <Button onPress={handleRegisterButton}>
                             <ButtonText>Sign up</ButtonText>
                         </Button>
                         <Button onPress={handleLoginButton}>
