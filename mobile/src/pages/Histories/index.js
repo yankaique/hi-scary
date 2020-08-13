@@ -10,11 +10,19 @@ import {Container,
         Icon,
         InfoArea,
         TitleItem} from './styles';
+import {useNavigation} from '@react-navigation/native';
 import items from './data';
 import menuItems from './menuData';
 
 const HistoriesScreen = () =>{
-    var i = 0;
+    
+    const navigation = useNavigation();
+
+    const handleHistoryButton = ()=>{
+        navigation.navigate('History');
+    }
+
+
     return(
         <Container>
             <Title>Histories</Title>
@@ -35,7 +43,7 @@ const HistoriesScreen = () =>{
                 <ItemMenu 
                     data={items}
                     renderItem={({item})=>(
-                            <ItemsButton>
+                            <ItemsButton onPress={handleHistoryButton}>
                                 <InfoArea style={{flexDirection:'row'}}>
                                     <Icon source={require('../../assets/pumpkin.png')}/>
                                     <InfoArea style={{justifyContent:'center',marginLeft:5}}>
