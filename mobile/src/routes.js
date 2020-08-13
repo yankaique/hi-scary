@@ -6,8 +6,7 @@ import HomeScreen from './pages/Home';
 import LoginScreen from './pages/Login';
 import HistoriesScreen from './pages/Histories';
 import RegisterScreen from './pages/Register';
-
-
+import HistoryScreen from './pages/History';
 
 const MainStack = createStackNavigator();
 
@@ -23,6 +22,8 @@ const Routes = () =>{
                 <MainStack.Screen name="Login" component={LoginScreen} />
                 <MainStack.Screen name="Histories" component={HistoriesScreen} />
                 <MainStack.Screen name="Register" component={RegisterScreen} />
+                <MainStack.Screen name="History" component={HistoryScreen} />
+
             </MainStack.Navigator>
         </NavigationContainer>
     );
