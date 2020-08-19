@@ -1,7 +1,14 @@
 import React from 'react';
-import {Container,Title, HeaderArea, Icon,  InputArea, Input} from './styles';
+import {Container,Title, HeaderArea, Icon,  InputArea, Input, PostButton, TextButton} from './styles';
+import {useNavigation} from '@react-navigation/native';
 
 const PostHistoryScreen = () =>{
+    const navigation = useNavigation();
+
+    const handleHistoriesButton = ()=>{
+        navigation.navigate('Items');
+    }
+
     return(
         <Container>
             <HeaderArea>
@@ -12,6 +19,11 @@ const PostHistoryScreen = () =>{
                 <Input placeholder="Title..." />
                 <Input placeholder="Subscription..." />
                 <Input placeholder="History..." multiline={true} numberOfLines={10}/>
+                <PostButton onPress={handleHistoriesButton}>
+                    <TextButton>
+                        Post
+                    </TextButton>
+                </PostButton>
             </InputArea>
         </Container>
     );
