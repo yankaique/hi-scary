@@ -23,6 +23,7 @@ export const Title = styled.Text`
 
 export const InputArea = styled.View`
     flex:6;
+    align-items:center;
 `;
 
 export const Input = styled.TextInput`
@@ -34,6 +35,17 @@ export const Input = styled.TextInput`
     padding:3px;
 `;
 
-export const PostButton = styled.TouchableOpacity``;
+export const PostButton = styled.TouchableOpacity`
+    background-color: #fd9822;
+    height:50px;
+    width:70px;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    margin-top:30px;
+`;
 
-export const TextButton = styled.Text``;
+export const TextButton = styled.Text`
+    color:#FFF;
+    font-size:15px;
+`;
