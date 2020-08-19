@@ -18,7 +18,7 @@ const RegisterScreen = ()=>{
                 </IconArea>
                 <Input placeholder='Email'/>
                 <Input placeholder='Nick name'/>
-                <Input placeholder='Password'/>
+                <Input secureTextEntry={true} placeholder='Password'/>
                 <LoginButton onPress={handleButtonHome}>
                     <Text>Register</Text>
                 </LoginButton>

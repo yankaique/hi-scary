@@ -17,7 +17,7 @@ const LoginScreen = ()=>{
                     <Text style={{color:'#566573',fontSize:30}}> | Login</Text>
                 </IconArea>
                 <Input placeholder='Login'/>
-                <Input placeholder='Password'/>
+                <Input secureTextEntry={true} placeholder='Password'/>
                 <LoginButton onPress={handleButtonLogin}>
                     <Text>Next</Text>
                 </LoginButton>
