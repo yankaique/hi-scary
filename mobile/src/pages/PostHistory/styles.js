@@ -4,6 +4,8 @@ export const Container = styled.SafeAreaView`
     flex:1;
 `;
 
+export const ScrollArea = styled.ScrollView``;
+
 export const HeaderArea = styled.View`
     flex:1;
     flex-direction:row;
@@ -22,15 +24,23 @@ export const Title = styled.Text`
 `
 
 export const InputArea = styled.View`
-    flex:6;
+    flex:9;
     align-items:center;
+    margin-bottom:40px;
+`;
+
+export const PickerArea = styled.View`
+    border-bottom-width:1px;
+    border-bottom-color:#fd9822;
+    height: 50px; 
+    width: 90%;
+    margin-top:15px;
 `;
 
 export const Input = styled.TextInput`
     border-bottom-width:1px;
     border-bottom-color:#FD9822;
     width: 90%;
-    margin-left:20px;
     margin-top:30px;
     padding:3px;
 `;
