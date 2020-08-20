@@ -14,19 +14,19 @@ export const HeaderArea = styled.View`
 `;
 
 export const Icon = styled.Image`
-    height:34px;
-    width:34px;
+    height:30px;
+    width:30px;
     align-items:center;
 `;
 
 export const Title = styled.Text`
-    font-size:25px;
+    font-size:20px;
 `
 
 export const InputArea = styled.View`
-    flex:9;
+    flex:7;
     align-items:center;
-    margin-bottom:40px;
+    margin-bottom:30px;
 `;
 
 export const PickerArea = styled.View`
