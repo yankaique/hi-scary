@@ -5,6 +5,18 @@ export const Container = styled.SafeAreaView`
     background-color:#2F0743;
 `;
 
+export const Header = styled.View`
+    flex:1;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:20%;
+`;
+
+export const HeaderIcon = styled.Image`
+    width:30px;
+    height:30px;
+`;
+
 export const MenuButton = styled.TouchableOpacity`
     background-color:#FD9822;
     height:30px;
@@ -24,9 +36,7 @@ export const Menu = styled.FlatList`
 
 export const Title = styled.Text`
     color:#FFF;
-    text-align:center;
-    margin-top:25%;
-    font-size:40px
+    font-size:20px
 `;
 
 export const Text = styled.Text`

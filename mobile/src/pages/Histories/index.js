@@ -1,6 +1,8 @@
 import React from 'react';
 import {Container,
+        Header,
         MenuButton,
+        HeaderIcon,
         Menu,
         Text,
         Title,
@@ -25,7 +27,10 @@ const HistoriesScreen = () =>{
 
     return(
         <Container>
-            <Title>Histories</Title>
+            <Header>
+                <HeaderIcon source={require('../../assets/pumpkin.png')}/>
+                <Title> | Histories</Title>
+            </Header>
             <Menu 
                 data={menuItems}
                 renderItem={({item})=>(
