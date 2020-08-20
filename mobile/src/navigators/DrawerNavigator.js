@@ -11,9 +11,9 @@ const Drawer = createDrawerNavigator();
 const DrawerRoute = ()=>{
     return(
         <Drawer.Navigator initialRouteName="Histories">
-            <Drawer.Screen name="PostHistory" component={PostHistoryScreen} options={{title:"Post history"}}/>
             <Drawer.Screen name="Items" component={HistoriesScreen} options={{title:"Histories"}}/>
             <Drawer.Screen name="MyHistories" component={MyHistoriesScreen} options={{title:"My Histories"}}/>
+            <Drawer.Screen name="PostHistory" component={PostHistoryScreen} options={{title:"Post history"}}/>
         </Drawer.Navigator>
     )
 }
